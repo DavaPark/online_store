@@ -1,5 +1,6 @@
 const sequelize = require('../db')
 const {DataTypes} = require('sequelize')
+const {normalizeType} = require("express/lib/utils");
 
 const User = sequelize.define('user', {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
@@ -21,6 +22,8 @@ const Device = sequelize.define('device', {
     name: {type: DataTypes.STRING, unique: true, allowNull: false},
     price: {type: DataTypes.INTEGER, allowNull: false},
     rating: {type: DataTypes.INTEGER, defaultValue: 0},
+    brandId: {type: DataTypes.INTEGER, primaryKey: true, allowNull: false},
+    typeId: {type: DataTypes.INTEGER, primaryKey: true, allowNull: false},
     img: {type: DataTypes.STRING, allowNull: false},
 })
 
