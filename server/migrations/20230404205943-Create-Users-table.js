@@ -25,8 +25,7 @@ module.exports = {
       price: {type: DataTypes.INTEGER, allowNull: false},
       rating: {type: DataTypes.INTEGER, defaultValue: 0},
       brandId: {type: DataTypes.INTEGER, allowNull: false},
-      typeId: {type: DataTypes.INTEGER, allowNull: false},
-      img: {type: DataTypes.STRING, allowNull: false}
+      typeId: {type: DataTypes.INTEGER, allowNull: false}
     });
 
     await  queryInterface.createTable('Type',{

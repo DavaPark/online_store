@@ -1,4 +1,4 @@
-const {Brand} = require('../models/models')
+const {Brand} = require('../migrations/20230404205943-Create-Users-table')
 const ApiError = require('../error/ApiError');
 
 class BrandController {

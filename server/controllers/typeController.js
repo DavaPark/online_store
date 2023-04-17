@@ -1,4 +1,4 @@
-const {Type} = require('../models/models')
+const {Type} = require('../migrations/20230404205943-Create-Users-table')
 const ApiError = require('../error/ApiError');
 
 class TypeController {

@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const sequelize = require('./db')
-const models = require('./models/models')
+const models = require('./migrations/20230404205943-Create-Users-table')
 const cors = require('cors')
 const fileUpload = require('express-fileupload')
 const router = require('./routes/index')

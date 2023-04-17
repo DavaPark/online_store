@@ -1,6 +1,6 @@
 const uuid = require('uuid');
 const path = require('path');
-const {Device} = require("../models/models");
+const {Device} = require("../migrations/20230404205943-Create-Users-table");
 const ApiError = require('../error/ApiError');
 
 
